@@ -21,12 +21,10 @@ open class JsonObjectMapper private constructor() {
             return mapper
         }
 
-        @JvmStatic
         val objectMapper = newObjectMapper()
 
         private val INSTANCE = JsonObjectMapper()
 
-        @JvmStatic
         fun getInstance(): JsonObjectMapper {
             return INSTANCE
         }
