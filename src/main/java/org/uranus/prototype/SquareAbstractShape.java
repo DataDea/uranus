@@ -16,7 +16,11 @@ public class SquareAbstractShape extends AbstractShape {
 
     @Override
     public Object copy() {
-        return null;
+        try {
+            return super.clone();
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     @Override
