@@ -7,11 +7,11 @@ package org.uranus.prototype;
 public class ProtoTypeManager {
 
     private ProtoTypeManager() {
-
     }
+
     private static ProtoTypeManager INSTANCE = new ProtoTypeManager();
 
-    public ProtoTypeManager getInstance() {
+    public static ProtoTypeManager getInstance() {
         return INSTANCE;
     }
 }
